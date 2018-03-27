@@ -19,7 +19,9 @@ from django.core.mail import send_mail
 from django.core.exceptions import ValidationError
 from django.core.files.storage import FileSystemStorage
 from django.core.files.base import ContentFile
-from django.contrib.auth.models import User, AnonymousUser
+from django.contrib.auth.models import AnonymousUser
+from django.contrib.auth import get_user_model
+User = get_user_model()
 from django.contrib.sites.models import Site
 from django.contrib.contenttypes.models import ContentType
 from django.template import Context, TemplateDoesNotExist

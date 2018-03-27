@@ -5,7 +5,8 @@ from contextlib import contextmanager
 from django.conf import settings
 from django.core.management import call_command
 from django.db.models import loading
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+User = get_user_model()
 from django import test
 from django.utils.translation import get_language
 
