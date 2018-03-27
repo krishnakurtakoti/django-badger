@@ -7,7 +7,7 @@ import re
 from datetime import datetime, timedelta, tzinfo
 from os.path import dirname
 from time import time, gmtime, strftime
-from urlparse import urljoin
+from urllib.parse import urljoin
 
 import django
 from django.conf import settings
